@@ -217,6 +217,7 @@ header li {
   }
   .categories li {
     padding: 20px;
+    margin-bottom: 20px;
   }
 }
 /*----- end of header styles -----*/
