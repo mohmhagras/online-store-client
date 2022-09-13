@@ -48,6 +48,12 @@ class Order extends React.Component {
               status: statusDetails[status].next,
             },
           }}
+          context={{
+            headers: {
+              email: localStorage.getItem("email"),
+              password: localStorage.getItem("password"),
+            },
+          }}
           refetchQueries={[{ query: Orders }]}
         >
           {(mutate) => (
