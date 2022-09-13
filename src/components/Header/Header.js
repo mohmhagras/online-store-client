@@ -28,6 +28,7 @@ class Header extends React.Component {
     let data = this.props.data;
     const { totalQuantity } = this.context;
     if (data.loading) return <header></header>;
+    if (data.error) console.log(data.error.message);
     const { categories, currencies } = data;
     return (
       <>

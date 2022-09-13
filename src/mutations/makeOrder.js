@@ -1,7 +1,7 @@
 import { gql } from "@apollo/client";
 
 export const MUTATION = gql`
-  mutation ($order: OrderInput!) {
+  mutation makeOrder($order: OrderInput!) {
     makeOrder(order: $order)
   }
 `;
