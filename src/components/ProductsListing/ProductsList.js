@@ -12,8 +12,10 @@ export default class ProductsList extends React.Component {
 
     return (
       <Query query={QUERY} variables={{ input: { title: selectedCategory } }}>
-        {({ loading, error, data }) => {
-          if (error) return <h1>{error.message}</h1>;
+        {({ loading, error, data, refetch }) => {
+          if (error) {
+            refetch({ variables: { input: { title: selectedCategory } } });
+          }
           if (loading || !data) return <Loader />;
           const { category } = data;
           return (
