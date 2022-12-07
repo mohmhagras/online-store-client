@@ -1,7 +1,7 @@
 module.exports = {
   client: {
     service: {
-      url: "https://online-store-api-mohagras.herokuapp.com",
+      url: "https://online-store-api.onrender.com",
       skipSSLValidation: true,
     },
   },

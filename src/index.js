@@ -5,7 +5,7 @@ import App from "./App";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 import { BrowserRouter } from "react-router-dom";
 const client = new ApolloClient({
-  uri: "https://online-store-api-mohagras.herokuapp.com/",
+  uri: "https://online-store-api.onrender.com",
   cache: new InMemoryCache(),
 });
 
